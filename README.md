@@ -1,3 +1,10 @@
+# Vector memory
+
+Demonstrates using a vector memory in a vector db qa chain using the chat-your-data challenge as a starting point.
+Rough idea is that instead of searching against a direct embedding of a question, the search is against a 'history vector'
+The history vector is formed by adding an embedding of the current question answer pair to a factor 'm' of the previous history
+For m < 1 this creates a vector that has some memory of the entire conversation by prioritises recent history
+
 # Chat-Your-Data
 
 Create a ChatGPT like experience over your custom docs using [LangChain](https://github.com/hwchase17/langchain).
